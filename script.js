@@ -18,11 +18,6 @@ const showPage = (list, page) => {
          list[i].style.display = 'none';
 
 
-
-
-
-
-
       }
    }
 }
@@ -59,9 +54,8 @@ const appendPageLinks = (list) => {
          pageLinks[j].classList.remove('active');
          let linkClick = event.target;
          linkClick.classList.add("active");
-         //calling function with studentList and linkClicks content 
+         //calling showPage function with studentList and linkClicks & textContent 
          showPage(studentList, linkClick.textContent);
-
 
       }
 
